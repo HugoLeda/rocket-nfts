@@ -42,7 +42,6 @@ body {
 .heading {
   background-image: url('./assets/assets/background.png');
   background-position: center;
-
   flex-direction: column;
 }
 
