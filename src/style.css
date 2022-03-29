@@ -42,14 +42,16 @@ body {
 .heading {
   background-image: url('./assets/assets/background.png');
   background-position: center;
+  background-origin: padding-box;
   flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .heading header {
   justify-content: space-between;
   height: 50px;
   align-items: center;
-  margin: 2rem 2rem 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .heading header > h1 {
@@ -81,4 +83,83 @@ body {
   justify-content: center; 
   align-items: space-around;
   color: var(--black-text);
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 246px;
+  gap: 1.5rem;
+}
+
+.artist {
+  flex: 2;
+  font-size: 18px;
+
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.artist div p {
+  height: 100%;
+  margin: auto 0 0 0;
+}
+
+.artist span strong {
+  display: block;
+}
+
+.title {
+  flex: 3;
+}
+
+.title h1 {
+  font-size: 3.125rem;
+  max-width: 596px;
+}
+
+.title h1 span {
+  font: inherit;
+  color: var(--color-logo);
+  display: block;
+}
+
+.img {
+  flex: 1;
+}
+
+.img img {
+  width: 11.25rem;
+  height: 11.25rem;
+}
+
+.photos {
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.photos img {
+  margin-top: 2rem;
+  width: calc(25% - 1rem);
+  border: 1px solid var(--text-color);
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.span {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.aside span:nth-child(1) {
+  color: var(--subtitle-color);
 }
