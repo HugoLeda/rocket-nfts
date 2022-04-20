@@ -154,12 +154,69 @@ aside {
   justify-content:center;
 }
 
-.span {
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: var(--text-color);
+.aside {
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.aside span:nth-child(1) {
+.aside div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.aside div span {
+  font-size: 1rem;
   color: var(--subtitle-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;  
+}
+
+.texts {
+  padding: 3rem;
+
+  font-size: 1rem;
+  display: flex;
+}
+
+.text {
+  width: 50%;
+}
+
+.text p {
+  max-width: 25rem;
+
+  margin-bottom: 2rem;
+}
+
+.text p span {
+  color:#ff5b50;
+}
+
+.text span {
+  text-decoration: underline;
+}
+
+.main img {
+  width: 100%;
+}
+
+.artist {
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
