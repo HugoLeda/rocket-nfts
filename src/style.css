@@ -12,7 +12,6 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
   color: var(--text-color);
   padding: 0;
   margin: 0;
@@ -219,4 +218,33 @@ aside {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.week {
+  padding: 3rem 6rem;
+}
+
+.week > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 5rem;
+}
+
+.week > h1 span {
+  font: inherit;
+  color: #ff5b50;
+}
+
+.week .astronaut {
+  justify-content: space-evenly;
+}
+
+.week .picture {
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.week .picture h1 img{
+  margin: 0 auto;
 }
