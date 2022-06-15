@@ -245,6 +245,41 @@ aside {
   gap: 1rem;
 }
 
-.week .picture h1 img{
-  margin: 0 auto;
+.week .picture .flex {
+  justify-content: space-between; 
+}
+
+.week .picture p {
+  color: var(--subtitle-color);
+  justify-content: space-between;
+}
+
+.week .picture p span {
+  color: var(--color-logo);
+}
+
+.best-week {
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-week .artists {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.artist {
+  width: 21.87rem;
+  margin-left: 100px;
+  background-color: aqua;
+}
+
+footer {
+  background-color: var(--subtitle-color);
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+footer .flex:first-child {
+  justify-content: space-between;
 }
