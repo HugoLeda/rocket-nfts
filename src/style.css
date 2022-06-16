@@ -80,8 +80,12 @@ body {
 .heading header button {
   width: 230px;
   justify-content: center; 
-  align-items: space-around;
+  align-items: center;
+  gap: 8px;
   color: var(--black-text);
+  font-weight: 800;
+  line-height: 40px;
+  cursor: pointer;
 }
 
 .information {
@@ -221,12 +225,7 @@ aside {
 }
 
 .week {
-  padding: 3rem 6rem;
-}
-
-.week > h1 {
-  font-size: 3.125rem;
-  margin-bottom: 5rem;
+  padding: 4rem 6rem;
 }
 
 .week > h1 span {
@@ -263,6 +262,14 @@ aside {
   align-items: center;
 }
 
+.best-week h1 {
+  font-size: 3.125rem;
+}
+
+.best-week h1 span {
+  color: var(--color-logo);
+}
+
 .best-week .artists {
   width: 100%;
   justify-content: space-around;
@@ -270,16 +277,121 @@ aside {
 }
 
 .week .artist-card {
-  width: 21.87rem;
-  margin-left: 100px;
-  background-color: aqua;
+  height: 150px;
+  width: 350px;
+  
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #252525;
+  margin: 3rem 0 2rem 0;  
+}
+
+.week .artist-card  img {
+  height: 100px;
+}
+
+.week .artist-card aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.week .artist-card span:not(2) {
+  color: #ff5b50;
+}
+
+.week .artist-card#main {
+  background-color: var(--color-logo);
 }
 
 footer {
-  background-color: var(--subtitle-color);
+  background-color: #252525;
   padding: 3rem 2rem 2rem 2rem;
+}
+
+footer > img {
+  margin-left: -2rem;
+  width: calc(100% + 4rem);
+}
+
+footer h3 {
+  font-size: 40px;
+  font-weight: bold;  
+}
+
+footer h3 span {
+  color: var(--color-logo);
 }
 
 footer .flex:first-child {
   justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+footer section .contact {
+  width: 450px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+footer section .contact span {
+  display: block;
+  color: var(--color-logo);
+}
+
+footer section .contact .email {
+  height: 60px;
+  width: 400px;
+  margin-top: 1rem;
+  background-color: #0D0D0D;
+}
+
+footer section .contact .email input {
+  height: 100%;
+  width: 75%;
+
+  background-color: transparent;
+  border: none;
+  outline: 0;
+
+  font-size: 20px;
+  padding-left: 1.5rem;
+}
+
+footer section .contact .email button {
+  height: 100%;
+  width: calc(20% + 11px);
+
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer section .container {
+  flex: 1;
+
+  padding: 4rem;
+
+  flex-wrap: wrap;
+}
+
+footer section .container span {
+  width: 33.33%;
+}
+
+footer section .container span:nth-child(1),
+footer section .container span:nth-child(2),
+footer section .container span:nth-child(3) {
+  font-weight: 700;
+}
+
+footer div.flex {
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+footer div.flex .social-icons img{
+  margin-left: 1.5rem;
 }
