@@ -269,7 +269,7 @@ aside {
   flex-wrap: wrap;
 }
 
-.artist {
+.week .artist-card {
   width: 21.87rem;
   margin-left: 100px;
   background-color: aqua;
