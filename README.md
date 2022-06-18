@@ -1,1 +1,1 @@
-<h1 align="center"> rocket-nfts </h1>
+<h1 align="center"> Rocket NFTs </h1>
